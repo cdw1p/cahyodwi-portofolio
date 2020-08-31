@@ -1,0 +1,16 @@
+<%- include('./templates/header') -%>
+   <body>
+      <div class="nonprintable">
+         <nav class="ui stackable menu pointing">
+            <a href="/" class="brand item">
+               <img class="ui avatar image" src="https://avatars1.githubusercontent.com/u/17512940" alt="Cahyo Dwi Putro"><span>Cahyo Dwi Putro</span>
+            </a>
+         </nav>
+         <button class="ui button icon basic darkmode-button jsOnly" id="darkmode" data-tooltip="Toggle theme" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
+         <a href="#" class="ui button icon basic translate-button" data-position="bottom right"><i class="us flag"></i></a>
+      </div>
+      <div style="padding-top: 10px; padding-bottom: 50px" class="ui container">
+         <div class="nonprintable filter-buttons jsOnly" id="projectsCategory"></div>
+         <div class="ui stackable three cards" id="filterable"></div>
+      </div>
+   <%- include('./templates/footer') -%>
