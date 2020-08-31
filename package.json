@@ -4,6 +4,7 @@
   "description": "My Personal Page",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "author": "cdw1",
