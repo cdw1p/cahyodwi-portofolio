@@ -5,12 +5,14 @@ module.exports.initialize = function(app) {
   app.use('/',
     router.get('/', (req, res) => {
       res.render('index', {
-        page_title: 'Home | Cahyo Dwi Putro'
+        page_title: 'Home | Cahyo Dwi Putro',
+        page_params: '/'
       })
     }),
     router.get('/projects', (req, res) => {
       res.render('projects', {
-        page_title: 'Recent Projects | Cahyo Dwi Putro'
+        page_title: 'Recent Projects | Cahyo Dwi Putro',
+        page_params: '/projects'
       })
     })
   )
