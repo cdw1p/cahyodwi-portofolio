@@ -1,5 +1,5 @@
 
-const webServerPORT = 80
+const webServerPORT = process.env.PORT || 4000
 const server = require('./app')
 server.use('*', function(req, res) {
   if (req.isSpider()) {
