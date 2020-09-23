@@ -31,9 +31,22 @@ module.exports.initialize = function(app) {
           ],
           "data": [
             {
+              "name": "Face Detection & Recognition",
+              "description": "Detect & Recognize People via Mobile Apps Using Rest-API or Client-side Browser",
+              "categoryName": "Web & Mobile Apps",
+              "category": "web-apps mobile-apps for-sale",
+              "thumbnail": "./assets/img/thumbnail/facial-recognition.jpg",
+              "tags": ["Node.js", "Express.js", "React Native", "Tensorflow"],
+              "type": [
+                {
+                  "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+            {
               "name": "My Logness",
               "description": "Inventory Management of Almost All Electronic Devices at PT Pelabuhan Indonesia III (Persero)",
-              "categoryName": "Mobile Apps",
+              "categoryName": "Web & Mobile Apps",
               "category": "mobile-apps web-apps",
               "thumbnail": "./assets/img/thumbnail/mylogness.jpg",
               "tags": [ "React Native", "Laravel" ],
@@ -69,6 +82,19 @@ module.exports.initialize = function(app) {
                 {
                   "repo": "https://github.com/cdw1p/supernova-whatsapp.git",
                   "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+            {
+              "name": "Face Detection",
+              "description": "Simple Face Detection in Laravel Framework",
+              "categoryName": "Web Apps",
+              "category": "web-apps",
+              "thumbnail": "./assets/img/thumbnail/face-detection.jpg",
+              "tags": ["Laravel"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/Laravel-Face-Detection.git"
                 }
               ]
             },
