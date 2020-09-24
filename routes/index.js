@@ -57,6 +57,21 @@ module.exports.initialize = function(app) {
                 }
               ]
             },
+
+            {
+              "name": "SSO (Single Sign-On) Gateway",
+              "description": "Features: Allowing Specific Domains, Security Challenge Using 2FA (SMS or Email) & MFA",
+              "categoryName": "Web Apps",
+              "category": "for-sale web-apps",
+              "thumbnail": "./assets/img/thumbnail/sso.jpg",
+              "tags": ["Node.js", "Express.js", "React Native"],
+              "type": [
+                {
+                  "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+
             {
               "name": "Linkedin Bot",
               "description": "Auto Search & Follow People by Keyword.<br/>Features: Multiple Keyword Search, Spam Handling & Detection, Very Fast with Minimum Resource Usage",
@@ -66,7 +81,6 @@ module.exports.initialize = function(app) {
               "tags": [ "Node.js", "Automation Bot" ],
               "type": [
                 {
-                  "repo": "https://github.com/cdw1p/linkedin-auto.git",
                   "contact": "mailto:cdw1@outlook.co.id"
                 }
               ]
@@ -80,7 +94,6 @@ module.exports.initialize = function(app) {
               "tags": [ "Node.js", "Express.js", "SQLite3", "Automation Bot" ],
               "type": [
                 {
-                  "repo": "https://github.com/cdw1p/supernova-whatsapp.git",
                   "contact": "mailto:cdw1@outlook.co.id"
                 }
               ]
