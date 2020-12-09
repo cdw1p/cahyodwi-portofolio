@@ -1,16 +1,50 @@
 <%- include('./templates/header') -%>
    <body>
-      <div class="nonprintable">
-         <nav class="ui stackable menu pointing">
-            <a href="/" class="brand item">
-               <img class="ui avatar image" src="https://avatars1.githubusercontent.com/u/17512940" alt="Cahyo Dwi Putro"><span>Cahyo Dwi Putro</span>
-            </a>
-         </nav>
-         <button class="ui button icon basic darkmode-button jsOnly" id="darkmode" data-tooltip="Toggle theme" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
-         <a href="#" class="ui button icon basic translate-button" data-position="bottom right"><i class="us flag"></i></a>
+   <div class="nonprintable">
+      <nav class="ui stackable menu pointing">
+         <a href="/" class="brand item">
+            <img class="ui avatar image" src="https://avatars1.githubusercontent.com/u/17512940" alt="Cahyo Dwi Putro"><span>Cahyo Dwi Putro</span>
+         </a>
+      </nav>
+      <button class="ui button icon basic darkmode-button jsOnly" id="darkmode" data-tooltip="Toggle theme" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
+      <a href="#" class="ui button icon basic translate-button" data-position="bottom right"><i class="us flag"></i></a>
+   </div>
+   <div id="app" style="padding-top: 10px; padding-bottom: 50px" class="ui container">
+      <div class="nonprintable filter-buttons jsOnly">
+         <a v-if="state.resListCategory.length < 1" class="button ui toggle filter">Loading....</a>
+         <a v-for="projectCategory in state.resListCategory" class="button ui toggle filter" v-bind:href="`#${projectCategory.link}`" v-bind:id="`filter-${projectCategory.link}`">
+            {{ projectCategory.name }}
+         </a>
       </div>
-      <div style="padding-top: 10px; padding-bottom: 50px" class="ui container">
-         <div class="nonprintable filter-buttons jsOnly" id="projectsCategory"></div>
-         <div class="ui stackable three cards" id="filterable"></div>
+      <div class="ui stackable three cards" id="filterable">
+         <div v-for="projectData in state.resListProjectData" v-bind:class="`ui card ${projectData.category}`" v-bind:style="">
+            <div class="image">
+               <img style="max-height: 166px" v-bind:src="projectData.thumbnail" v-bind:alt="projectData.name">
+            </div>
+            <div class="content">
+               <span class="header">{{ projectData.name }}</span>
+               <div class="meta">
+                  <span class="date">{{ projectData.categoryName }}</span>
+               </div>
+               <div class="description">{{ projectData.description }}</div>
+            </div>
+            <div class="extra content">
+               <div class="ui small labels">
+                  <div class="ui grey label" v-for="dataTags in projectData.tags">{{ dataTags }}</div>
+               </div>
+            </div>
+            <div v-for="projectType in projectData.type" v-bind:class="`nonprintable ${Object.keys(projectData.type[0]).length > 1 ? 'ui bottom attached buttons' : ''}`" style="z-index: 1;">
+               <a v-if="projectType.repo" class="ui bottom attached button black" :href="projectType.repo" target="_blank"><i class="github icon"></i>Repository</a>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.repo && projectType.npm" class="or" data-text="or"></div>
+               <a v-if="projectType.npm" class="ui bottom attached button red" :href="projectType.npm" target="_blank"><i class="npm icon"></i>Modules</a>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.npm && projectType.apk" class="or" data-text="or"></div>
+               <a v-if="projectType.apk" class="ui bottom attached button teal" :href="projectType.apk" target="_blank"><i class="google play icon"></i>Play Store</a>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.apk && projectType.site" class="or" data-text="or"></div>
+               <a v-if="projectType.site" class="ui bottom attached button grey" :href="projectType.site" target="_blank"><i class="globe icon"></i>Website</a>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.site && projectType.contact" class="or" data-text="or"></div>
+               <a v-if="projectType.contact" class="ui bottom attached button orange" :href="projectType.contact" target="_blank"><i class="mail icon"></i>Contact</a>
+            </div>
+         </div>
       </div>
+   </div>
    <%- include('./templates/footer') -%>
