@@ -32,11 +32,25 @@ module.exports.initialize = function(app) {
           ],
           "data": [
             {
+              "name": "Pelindo External Attendance",
+              "description": "App Offers the Surest Way to Track Field Employees Time, Attendance With Face Recognition & Location",
+              "categoryName": "Web & Mobile Apps",
+              "category": "ai-ml web-apps mobile-apps",
+              "thumbnail": "/assets/img/thumbnail/attendance-system.jpg",
+              "tags": ["Node.js", "Express.js", "React Native", "Tensorflow"],
+              "type": [
+                {
+                  "apk": "https://play.google.com/store/apps/details?id=com.pelindoexternalattendance",
+                  "site": "https://linexa.itopsp3.my.id/"
+                }
+              ]
+            },
+            {
               "name": "KTP Validation Using OCR",
               "description": "Detect & Recognize Indonesian Identity Card (KTP) with Digital Image Processing Pattern",
               "categoryName": "Web Apps",
               "category": "ai-ml web-apps",
-              "thumbnail": "/assets/img/thumbnail/ktp-ocr.png",
+              "thumbnail": "/assets/img/thumbnail/ktp-ocr.jpg",
               "tags": ["Node.js", "Express.js", "Tesseract.js", "Image Processing"],
               "type": [
                 {
