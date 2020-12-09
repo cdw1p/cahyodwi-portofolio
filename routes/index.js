@@ -125,6 +125,20 @@ module.exports.initialize = function(app) {
               ]
             },
             {
+              "name": "Smartbot Chatbot",
+              "description": "Intelligent Chatbot Developed for Better Outcomes Across Businesses Processes & Simplify Operations and Bring Significant Positive Impact",
+              "categoryName": "Web Apps",
+              "category": "for-sale ai-ml web-apps",
+              "thumbnail": "/assets/img/thumbnail/smartbot-chatbot.jpg",
+              "tags": ["Node.js", "Express.js", "NLP", "Text Processing"],
+              "type": [
+                {
+                  "video": "https://drive.google.com/file/d/1UUEY6Mz_eYGsXAXhRR9WCNCR1MFs1tSO/view?usp=sharing",
+                  "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+            {
               "name": "Linkedin Bot",
               "description": "Features: Auto Search & Follow People by Keyword, Multiple Keyword Search, Spam Handling & Detection, Very Fast with Minimum Resource Usage",
               "categoryName": "Web Automation",
