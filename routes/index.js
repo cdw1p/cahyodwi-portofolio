@@ -113,7 +113,7 @@ module.exports.initialize = function(app) {
             },
             {
               "name": "SSO (Single Sign-On) Gateway",
-              "description": "Features: Allowing Specific Domains, Security Challenge Using 2FA (SMS or Email) & MFA",
+              "description": "Simplifies User Logon Experience, Reduces the Risks Associated With Password Only Authentication. Security Challenge Using 2FA (SMS or Email) & MFA",
               "categoryName": "Web Apps",
               "category": "for-sale web-apps",
               "thumbnail": "/assets/img/thumbnail/sso.jpg",
@@ -140,7 +140,7 @@ module.exports.initialize = function(app) {
             },
             {
               "name": "Linkedin Bot",
-              "description": "Features: Auto Search & Follow People by Keyword, Multiple Keyword Search, Spam Handling & Detection, Very Fast with Minimum Resource Usage",
+              "description": "Automatic Search and Follow People by Multiple Keyword, Capability for Handling Spam Detection, & Running with Minimum Resource Usage",
               "categoryName": "Web Automation",
               "category": "for-sale web-automation",
               "thumbnail": "/assets/img/thumbnail/linkedin.jpg",

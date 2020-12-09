@@ -7,6 +7,7 @@ const expressSpider = require('express-spider-middleware')
 const app = express()
 
 app.enable('trust proxy')
+app.disable('x-powered-by')
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.engine('ejs', require('ejs').__express)
