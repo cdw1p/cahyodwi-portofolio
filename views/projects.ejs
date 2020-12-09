@@ -41,7 +41,9 @@
                <a v-if="projectType.apk" class="ui bottom attached button teal" :href="projectType.apk" target="_blank"><i class="google play icon"></i>Play Store</a>
                <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.apk && projectType.site" class="or" data-text="or"></div>
                <a v-if="projectType.site" class="ui bottom attached button grey" :href="projectType.site" target="_blank"><i class="globe icon"></i>Website</a>
-               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.site && projectType.contact" class="or" data-text="or"></div>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.site && projectType.video" class="or" data-text="or"></div>
+               <a v-if="projectType.video" class="ui bottom attached button blue" :href="projectType.video" target="_blank"><i class="video icon"></i>Video</a>
+               <div v-if="Object.keys(projectData.type[0]).length > 1 && projectType.video && projectType.contact" class="or" data-text="or"></div>
                <a v-if="projectType.contact" class="ui bottom attached button orange" :href="projectType.contact" target="_blank"><i class="mail icon"></i>Contact</a>
             </div>
          </div>

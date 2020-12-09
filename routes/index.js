@@ -133,6 +133,7 @@ module.exports.initialize = function(app) {
               "tags": [ "Node.js", "Automation Bot" ],
               "type": [
                 {
+                  "video": "https://drive.google.com/file/d/1ZhoPp-6raBFprqbX4WZX4p9ri0yPZRro/view?usp=sharing",
                   "contact": "mailto:cdw1@outlook.co.id"
                 }
               ]
