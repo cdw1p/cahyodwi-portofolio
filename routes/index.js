@@ -178,6 +178,20 @@ module.exports.initialize = function(app) {
               ]
             },
             {
+              "name": "Facebook Simple API",
+              "description": "Wrapped from Facebook's Graph API",
+              "categoryName": "NPM Modules",
+              "category": "npm-modules",
+              "thumbnail": "/assets/img/thumbnail/facebook-graph.jpg",
+              "tags": [ "Node.js", "Javascript", "API Wrapper"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/facebook-simple-api.git",
+                  "npm": "https://www.npmjs.com/package/facebook-simple-api"
+                }
+              ]
+            },
+            {
               "name": "SGB Team API",
               "description": "SGB Team Official API to Check SGB Code Validation",
               "categoryName": "NPM Modules",
