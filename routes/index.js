@@ -164,6 +164,20 @@ module.exports.initialize = function(app) {
               ]
             },
             {
+              "name": "Facebook Videos API",
+              "description": "Unofficial API to Get Facebook Videos Information (Title, Caption, & Link)",
+              "categoryName": "NPM Modules",
+              "category": "npm-modules",
+              "thumbnail": "/assets/img/thumbnail/facebook-videos.jpg",
+              "tags": [ "Node.js", "Javascript", "API Wrapper"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/facebook-video-link.git",
+                  "npm": "https://www.npmjs.com/package/facebook-video-link"
+                }
+              ]
+            },
+            {
               "name": "SGB Team API",
               "description": "SGB Team Official API to Check SGB Code Validation",
               "categoryName": "NPM Modules",
