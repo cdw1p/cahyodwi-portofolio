@@ -33,7 +33,7 @@ module.exports.initialize = function(app) {
           "data": [
             {
               "name": "Pelindo External Attendance",
-              "description": "App Offers the Surest Way to Track Field Employees Time, Attendance With Face Recognition & Location",
+              "description": "App Offers the Surest Way to Track Field Employees Time, Attendance with Face Recognition & Location",
               "categoryName": "Web & Mobile Apps",
               "category": "ai-ml web-apps mobile-apps",
               "thumbnail": "/assets/img/thumbnail/attendance-system.jpg",
@@ -55,6 +55,19 @@ module.exports.initialize = function(app) {
               "type": [
                 {
                   "repo": "https://github.com/cdw1p/ktp-validation-image.git"
+                }
+              ]
+            },
+            {
+              "name": "React Native Fancy Drawer",
+              "description": "React Native Navigation Drawer Implementation Using Custom Fancy Design",
+              "categoryName": "Mobile Apps",
+              "category": "mobile-apps",
+              "thumbnail": "/assets/img/thumbnail/fancy-drawer-rn.jpg",
+              "tags": ["React Native"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/rn-example-fancydrawer.git"
                 }
               ]
             },
