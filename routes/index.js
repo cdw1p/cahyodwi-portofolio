@@ -72,6 +72,19 @@ module.exports.initialize = function(app) {
               ]
             },
             {
+              "name": "React Native Video Stream",
+              "description": "React Native Video Stream Implementation Using Protocol RTSP (Real-time Monitoring)",
+              "categoryName": "Mobile Apps",
+              "category": "mobile-apps",
+              "thumbnail": "/assets/img/thumbnail/video-stream-rstp-rn.jpg",
+              "tags": ["React Native"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/RN-RTSP-Video-Stream.git"
+                }
+              ]
+            },
+            {
               "name": "Face Detection & Recognition",
               "description": "Detect & Recognize People via Mobile Apps Using Rest-API or Client-side Browser",
               "categoryName": "Web & Mobile Apps",
