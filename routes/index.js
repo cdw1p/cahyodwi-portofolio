@@ -23,6 +23,7 @@ module.exports.initialize = function(app) {
         {
           "category": [
             { "name": "For Sale", "link": "for-sale" },
+            { "name": "AI & ML", "link": "ai-ml" },
             { "name": "Web Apps", "link": "web-apps" },
             { "name": "Mobile Apps", "link": "mobile-apps" },
             { "name": "Web Automation", "link": "web-automation" },
@@ -31,11 +32,24 @@ module.exports.initialize = function(app) {
           ],
           "data": [
             {
+              "name": "KTP Validation Using OCR",
+              "description": "Detect & Recognize Indonesian Identity Card (KTP) with Digital Image Processing Pattern",
+              "categoryName": "Web Apps",
+              "category": "ai-ml web-apps",
+              "thumbnail": "/assets/img/thumbnail/ktp-ocr.png",
+              "tags": ["Node.js", "Express.js", "Tesseract.js", "Image Processing"],
+              "type": [
+                {
+                  "repo": "https://github.com/cdw1p/ktp-validation-image.git"
+                }
+              ]
+            },
+            {
               "name": "Face Detection & Recognition",
               "description": "Detect & Recognize People via Mobile Apps Using Rest-API or Client-side Browser",
               "categoryName": "Web & Mobile Apps",
-              "category": "web-apps mobile-apps for-sale",
-              "thumbnail": "./assets/img/thumbnail/facial-recognition.jpg",
+              "category": "for-sale ai-ml web-apps mobile-apps",
+              "thumbnail": "/assets/img/thumbnail/facial-recognition.jpg",
               "tags": ["Node.js", "Express.js", "React Native", "Tensorflow"],
               "type": [
                 {
@@ -47,8 +61,8 @@ module.exports.initialize = function(app) {
               "name": "My Logness",
               "description": "Inventory Management of Almost All Electronic Devices at PT Pelabuhan Indonesia III (Persero)",
               "categoryName": "Web & Mobile Apps",
-              "category": "mobile-apps web-apps",
-              "thumbnail": "./assets/img/thumbnail/mylogness.jpg",
+              "category": "web-apps mobile-apps",
+              "thumbnail": "/assets/img/thumbnail/mylogness.jpg",
               "tags": [ "React Native", "Laravel" ],
               "type": [
                 {
@@ -57,13 +71,12 @@ module.exports.initialize = function(app) {
                 }
               ]
             },
-
             {
               "name": "SSO (Single Sign-On) Gateway",
               "description": "Features: Allowing Specific Domains, Security Challenge Using 2FA (SMS or Email) & MFA",
               "categoryName": "Web Apps",
               "category": "for-sale web-apps",
-              "thumbnail": "./assets/img/thumbnail/sso.jpg",
+              "thumbnail": "/assets/img/thumbnail/sso.jpg",
               "tags": ["Node.js", "Express.js", "React Native"],
               "type": [
                 {
@@ -71,13 +84,12 @@ module.exports.initialize = function(app) {
                 }
               ]
             },
-
             {
               "name": "Linkedin Bot",
-              "description": "Auto Search & Follow People by Keyword.<br/>Features: Multiple Keyword Search, Spam Handling & Detection, Very Fast with Minimum Resource Usage",
+              "description": "Features: Auto Search & Follow People by Keyword, Multiple Keyword Search, Spam Handling & Detection, Very Fast with Minimum Resource Usage",
               "categoryName": "Web Automation",
               "category": "for-sale web-automation",
-              "thumbnail": "./assets/img/thumbnail/linkedin.jpg",
+              "thumbnail": "/assets/img/thumbnail/linkedin.jpg",
               "tags": [ "Node.js", "Automation Bot" ],
               "type": [
                 {
@@ -90,7 +102,7 @@ module.exports.initialize = function(app) {
               "description": "Unofficial Whatsapp Bot - Build in With REST-API & Admin Panel. Support Multiple Account Login (Worked Perfect with Multi Session)",
               "categoryName": "Web Automation",
               "category": "for-sale web-automation",
-              "thumbnail": "./assets/img/thumbnail/wagateway.jpg",
+              "thumbnail": "/assets/img/thumbnail/wagateway.jpg",
               "tags": [ "Node.js", "Express.js", "SQLite3", "Automation Bot" ],
               "type": [
                 {
@@ -103,7 +115,7 @@ module.exports.initialize = function(app) {
               "description": "Simple Face Detection in Laravel Framework",
               "categoryName": "Web Apps",
               "category": "web-apps",
-              "thumbnail": "./assets/img/thumbnail/face-detection.jpg",
+              "thumbnail": "/assets/img/thumbnail/face-detection.jpg",
               "tags": ["Laravel"],
               "type": [
                 {
@@ -116,7 +128,7 @@ module.exports.initialize = function(app) {
               "description": "SGB Team Official API to Check SGB Code Validation",
               "categoryName": "NPM Modules",
               "category": "npm-modules",
-              "thumbnail": "./assets/img/thumbnail/sgbteam.jpg",
+              "thumbnail": "/assets/img/thumbnail/sgbteam.jpg",
               "tags": [ "Node.js", "Javascript", "API Wrapper"],
               "type": [
                 {
