@@ -14,6 +14,12 @@ module.exports.initialize = function(app) {
         page_title: 'Recent Projects | Cahyo Dwi Putro',
         page_params: '/projects'
       })
+    }),
+    router.get('/cv', (req, res) => {
+      res.render('cv', {
+        page_title: 'CV | Cahyo Dwi Putro',
+        page_params: '/cv'
+      })
     })
   )
 
