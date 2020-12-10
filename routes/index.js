@@ -11,7 +11,7 @@ module.exports.initialize = function(app) {
     }),
     router.get('/projects', (req, res) => {
       res.render('projects', {
-        page_title: 'Recent Projects | Cahyo Dwi Putro',
+        page_title: 'Projects | Cahyo Dwi Putro',
         page_params: '/projects'
       })
     }),
