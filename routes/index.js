@@ -52,6 +52,20 @@ module.exports.initialize = function(app) {
               ]
             },
             {
+              "name": "Secure Electronic Signature",
+              "description": "Protect the Integrity of the Electronic Digital Signature Using Certificate Authority (CA)",
+              "categoryName": "Web Apps",
+              "category": "for-sale ai-ml web-apps",
+              "thumbnail": "/assets/img/thumbnail/digital-signature.jpg",
+              "tags": ["Node.js", "Express.js", "Document Recognition"],
+              "type": [
+                {
+                  "video": "https://drive.google.com/file/d/1Wn79zd-89VtkulLmlw-Xk5rfRsWJGGJf/view?usp=sharing",
+                  "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+            {
               "name": "Pelindo External Attendance",
               "description": "App Offers the Surest Way to Track Field Employees Time, Attendance with Face Recognition & Location",
               "categoryName": "Web & Mobile Apps",
