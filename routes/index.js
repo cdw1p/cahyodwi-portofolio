@@ -38,6 +38,20 @@ module.exports.initialize = function(app) {
           ],
           "data": [
             {
+              "name": "YouTube Bot",
+              "description": "Automatically Login & Store Session, Multi-task processing, Capability for Handling Spam Detection",
+              "categoryName": "Web Automation",
+              "category": "for-sale web-automation",
+              "thumbnail": "/assets/img/thumbnail/youtube-bot.jpg",
+              "tags": ["Node.js", "Automation Bot"],
+              "type": [
+                {
+                  "video": "https://drive.google.com/file/d/1mlPUkLdP9liRKzAcB1DN4bTLGxb2JgTW/view?usp=sharing",
+                  "contact": "mailto:cdw1@outlook.co.id"
+                }
+              ]
+            },
+            {
               "name": "Pelindo External Attendance",
               "description": "App Offers the Surest Way to Track Field Employees Time, Attendance with Face Recognition & Location",
               "categoryName": "Web & Mobile Apps",
