@@ -38,6 +38,19 @@ module.exports.initialize = function(app) {
           ],
           "data": [
             {
+              "name": "E-Parking",
+              "description": "Handling In & Out Records, Print E-Receipt (For Driver), Filter Report, Filter Revenue, Multi Users",
+              "categoryName": "Web Apps",
+              "category": "web-apps",
+              "thumbnail": "/assets/img/thumbnail/e-parking.jpg",
+              "tags": ["Node.js", "Express.js", "Vue.js"],
+              "type": [
+                {
+                  "site": "https://dmptanjungwangi.my.id/"
+                }
+              ]
+            },
+            {
               "name": "YouTube Bot",
               "description": "Automatically Login & Store Session, Multi-task processing, Capability for Handling Spam Detection",
               "categoryName": "Web Automation",
