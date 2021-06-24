@@ -7,13 +7,13 @@
       </div>
       <div id="filters-container">
         <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">All</div>
-        <% for (let categoryData of page_data[0].category) {  %>
+        <% for (let categoryData of page_data.category) {  %>
           <div data-filter=".<%= categoryData.link %>" class="cbp-filter-item"><%= categoryData.name %></div>
         <% } %>
       </div>
     </div>
     <div id="grid-container" class="top_60">
-      <% for (let contentData of page_data[0].data) {  %>
+      <% for (let contentData of page_data.data) {  %>
         <div class="cbp-item <%= contentData.category %>">
           <a href="/viewContent/<%= contentData.name %>" class="cbp-singlePage">
             <figure>

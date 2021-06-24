@@ -53,7 +53,7 @@ $(document).ready(function () {
         singlePageAnimation: 'fade',
         mediaQueries: [{
                 width: 800,
-                cols: 2,
+                cols: 3,
             }, {
                 width: 480,
                 cols: 2,
