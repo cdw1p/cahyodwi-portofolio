@@ -1,44 +1,82 @@
 <%- include('./templates/header') -%>
-   <body>
-      <button class="ui button icon basic darkmode-button jsOnly" id="darkmode" data-tooltip="Toggle theme" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
-      <a href="#" class="ui button icon basic translate-button" data-position="bottom right"><i class="us flag"></i></a>
-      <div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid">
-         <div class="column">
-            <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
-               <img src="https://avatars1.githubusercontent.com/u/17512940" alt="Cahyo Dwi Putro">
-            </div>
-            <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
-               <div class="center aligned content">
-                  <span class="header">Cahyo Dwi Putro</span>
-                  <div class="meta">
-                     <span class="date">Tech Enthusiast</span>
-                  </div>
-                  <div style="padding: 0px 30px 0px;" class="center aligned description">
-                     Hi, I’m currently working as Information Technology Technical Support (full-time) and as freelancer Security Analyst (half-time).<br/>Serverless, DevCommunity, Security, and Creative Coding! ✨
-                  </div>
+<body>
+   <!-- Preloading -->
+   <div id="preloader">
+      <div class="spinner">
+      </div>
+   </div>
+   <!-- Wrapper --> 
+   <div class="wrapper top_60 container">
+      <div class="row">
+         <!-- Profile Section --> 
+         <div class="col-lg-3 col-md-4">
+            <div class="profile">
+               <div class="profile-name">
+                  <span class="name">CAHYO DWI PUTRO</span><br>
+                  <span class="job">Technology Enthusiast</span>
                </div>
-               <div class="center aligned extra content">
-                  <a target="_blank" class="ui circular icon black button" href="https://github.com/cdw1p"><i class="large github icon"></i></a>
-                  <a target="_blank" class="ui circular icon gray button" href="https://dev.to/cdw1p"><i class="large dev icon"></i></a>
-                  <a target="_blank" class="ui circular icon blue button" href="https://www.linkedin.com/in/cdw1p"><i class="large linkedin icon"></i></a>
-                  <a target="_blank" class="ui circular icon pink button" href="https://instagram.com/cdw1p"><i class="large instagram icon"></i></a>
-                  <a target="_blank" class="ui circular mail icon red button" href="mailto:cdw1@outlook.co.id"><i class="large mail icon "></i></a>
-               </div>
-               <div class="center aligned content" style="line-height: 3em">
-                  <a class="ui animated blue button" href="/projects#all">
-                     <div class="visible content">Projects</div>
-                     <div class="hidden content">
-                        <i class="right arrow icon"></i>
-                     </div>
-                  </a>
-                  <a class="ui animated blue button" href="/cv">
-                     <div class="visible content">CV</div>
-                     <div class="hidden content">
-                        <i class="right arrow icon"></i>
-                     </div>
-                  </a>
+               <figure class="profile-image">
+                  <img src="https://avatars1.githubusercontent.com/u/17512940" alt="Profile Image's">
+               </figure>
+               <ul class="profile-information">
+                  <li></li>
+                  <li><p><span><i class="fa fa-building" aria-hidden="true"></i></span>&nbsp;&nbsp;PT Pelindo Daya Sejahtera</p></li>
+                  <li><p><span><i class="fa fa-home" aria-hidden="true"></i></span>&nbsp;&nbsp;Bima, West Nusa Tenggara</p></li>
+                  <li><p><span><i class="fa fa-calendar" aria-hidden="true"></i></span>&nbsp;&nbsp;27 October 1999</p></li>
+               </ul>
+               <div class="col-md-12">
+                  <button class="site-btn icon">Download CV <i class="fa fa-download" aria-hidden="true"></i></button>
                </div>
             </div>
          </div>
+         <!-- Page Tab Container Div -->   
+         <div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+            <!-- Header --> 
+            <div class="row bottom_30">
+               <header class="col-md-12">
+                  <nav>
+                     <div class="row">
+                        <!-- navigation bar -->
+                        <div class="col-md-8 col-sm-8 col-xs-4">
+                           <ul class="tabs">
+                              <li class="tab"><a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                              <li class="tab"><a href="#resume">RESUME</a></li>
+                              <li class="tab"><a href="#portfolio">PORTFOLIO</a></li>
+                              <li class="tab"><a href="#contact">CONTACT</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
+                           <a href="mailto:hi@tavonline.net" class="pull-right site-btn icon hidden-xs">Contact Me <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                           <div class="hidden-md social-icons pull-right"> 
+                              <a href="https://github.com/cdw1p"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                              <a href="https://www.linkedin.com/in/cdw1p"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </header>
+               <!-- Page Content --> 
+               <div class="col-md-12">
+                  <div id="content" class="panel-container">
+                     <!-- Home Page -->
+                     <%- include('./content/home') -%>
+                     <!-- Resume Page -->
+                     <%- include('./content/resume') -%>
+                     <!-- Portfolio Page -->
+                     <%- include('./content/portofolio') -%>
+                     <!-- Contact Page -->
+                     <%- include('./content/contact') -%>
+                  </div>
+                  <!-- Content - End -->
+               </div>
+               <!-- col-md-12 end -->
+            </div>
+            <!-- row end -->
+         </div>
+         <!-- Tab Container - End -->
       </div>
-   <%- include('./templates/footer') -%>
+      <!-- Row - End --> 
+   </div>
+   <!-- Wrapper - End -->   
+<%- include('./templates/footer') -%>

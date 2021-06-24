@@ -1,0 +1,34 @@
+<div id="portfolio" class="row bottom_45">
+  <section class="col-md-12">
+    <div class="col-md-12 content-header bottom_15">
+      <div class="section-title top_30 bottom_30">
+        <span></span>
+        <h2>Portfolio</h2>
+      </div>
+      <div id="filters-container">
+        <div data-filter="*" class="cbp-filter-item cbp-filter-item-active">All</div>
+        <% for (let categoryData of page_data[0].category) {  %>
+          <div data-filter=".<%= categoryData.link %>" class="cbp-filter-item"><%= categoryData.name %></div>
+        <% } %>
+      </div>
+    </div>
+    <div id="grid-container" class="top_60">
+      <% for (let contentData of page_data[0].data) {  %>
+        <div class="cbp-item <%= contentData.category %>">
+          <a href="/viewContent/<%= contentData.name %>" class="cbp-singlePage">
+            <figure>
+              <div class="icon">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <img src="<%= contentData.thumbnail %>" alt="<%= contentData.name %>" >
+              <figcaption>
+                <span class="title"><%= contentData.name %></span><br/>
+                <span class="info"><%= contentData.description %></span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      <% } %>
+    </div>
+  </section>
+</div>
