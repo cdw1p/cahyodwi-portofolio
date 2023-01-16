@@ -2,12 +2,106 @@
   "category": [
     { "name": "For Sale", "link": "for-sale" },
     { "name": "AI & ML", "link": "ai-ml" },
-    { "name": "Web Apps", "link": "web-apps" },
+    { "name": "API / Web Apps", "link": "web-apps" },
     { "name": "Mobile Apps", "link": "mobile-apps" },
     { "name": "Web Automation", "link": "web-automation" },
     { "name": "NPM Modules", "link": "npm-modules" }
   ],
   "data": [
+    {
+      "name": "My MSE",
+      "description": "Electronic Mail Management. Supports Digital Signature, Auto Numbering, Approval and Disposition",
+      "categoryName": "Web Apps",
+      "category": "web-apps",
+      "thumbnail": "/img/thumbnail/bbk-mse.jpg",
+      "tags": [ "Node.js", "Javascript"],
+      "type": [
+        {
+          "site": "https://mse.banyubirukahurangi.co.id"
+        }
+      ]
+    },
+    {
+      "name": "Fimuson App",
+      "description": "Exam Project For Find Music Online App Using Web Scraping",
+      "categoryName": "Web Automation",
+      "category": "web-automation",
+      "thumbnail": "/img/thumbnail/fimuson.jpg",
+      "tags": [ "Node.js", "Javascript", "Automation Bot"],
+      "type": [
+        {
+          "repo": "https://github.com/cdw1p/fimuson-app"
+        }
+      ]
+    },
+    {
+      "name": "BCA Statement Scraper",
+      "description": "Scraping Statement (Mutasi) In BCA Internet Banking",
+      "categoryName": "NPM Modules",
+      "category": "web-automation",
+      "thumbnail": "/img/thumbnail/bca.jpg",
+      "tags": [ "Node.js", "Javascript", "Automation Bot"],
+      "type": [
+        {
+          "repo": "https://github.com/cdw1p/BCA-Statement-Scraper"
+        }
+      ]
+    },
+    {
+      "name": "WNRSTORE API",
+      "description": "Official API Wrapper from WNRStore.com to Order OTP, Check Account Info, and More",
+      "categoryName": "NPM Modules",
+      "category": "npm-modules",
+      "thumbnail": "/img/thumbnail/wnrstore-api.jpg",
+      "tags": [ "Node.js", "Javascript", "API Wrapper"],
+      "type": [
+        {
+          "repo": "https://github.com/cdw1p/WNRStore-API",
+          "npm": "https://www.npmjs.com/package/wnrstore-api"
+        }
+      ]
+    },
+    {
+      "name": "WNRSTORE",
+      "description": "OTP Service Provider For All Applications That Require Verification Code",
+      "categoryName": "Web & Mobile Apps",
+      "category": "web-apps mobile-apps",
+      "thumbnail": "/img/thumbnail/wnrstore-app.jpg",
+      "tags": ["Node.js", "Express.js", "React Native"],
+      "type": [
+        {
+          "apk": "https://play.google.com/store/apps/details?id=com.distrive.wnrstoremobile",
+          "site": "https://wnrstore.com/"
+        }
+      ]
+    },
+    {
+      "name": "My BBK",
+      "description": "Integrated Application For Employee Interaction at PT Banyu Biru Kahurangi. Make Easy For Receive Information And Take Action.",
+      "categoryName": "Web & Mobile Apps",
+      "category": "web-apps mobile-apps",
+      "thumbnail": "/img/thumbnail/bbk-my.jpg",
+      "tags": ["Node.js", "Express.js", "React Native"],
+      "type": [
+        {
+          "apk": "https://play.google.com/store/apps/details?id=com.distrive.mybbk",
+          "site": "https://my.banyubirukahurangi.co.id/"
+        }
+      ]
+    },
+    {
+      "name": "Timezone NTP Server",
+      "description": "Handle Timezone Time Automatic by Local Timezone or With Geolocation (Latitude, Longitude)",
+      "categoryName": "Web Apps",
+      "category": "web-apps",
+      "thumbnail": "/img/thumbnail/timezone-ntp.jpg",
+      "tags": ["Node.js", "Express.js"],
+      "type": [
+        {
+          "site": "http://ntp1.pelindo.co.id/"
+        }
+      ]
+    },
     {
       "name": "E-Parking",
       "description": "Handling In & Out Records, Print E-Receipt (For Driver), Filter Report, Filter Revenue, Multi Users",
@@ -53,7 +147,7 @@
       "name": "Pelindo External Attendance",
       "description": "App Offers the Surest Way to Track Field Employees Time, Attendance with Face Recognition & Location",
       "categoryName": "Web & Mobile Apps",
-      "category": "ai-ml web-apps mobile-apps",
+      "category": "web-apps mobile-apps",
       "thumbnail": "/img/thumbnail/attendance-system.jpg",
       "tags": ["Node.js", "Express.js", "React Native", "Tensorflow"],
       "type": [
@@ -121,7 +215,7 @@
       "categoryName": "Web & Mobile Apps",
       "category": "web-apps mobile-apps",
       "thumbnail": "/img/thumbnail/mylogness.jpg",
-      "tags": [ "React Native", "Laravel" ],
+      "tags": ["React Native", "Laravel"],
       "type": [
         {
           "apk": "https://play.google.com/store/apps/details?id=com.mylogness&hl=in",

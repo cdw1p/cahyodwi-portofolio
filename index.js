@@ -5,6 +5,7 @@ const compression = require('compression')
 const expressMinify = require('express-minify-html-2')
 const expressSpider = require('express-spider-middleware')
 const app = express()
+const port = process.env.PORT || 4000
 
 app.enable('trust proxy')
 app.disable('x-powered-by')
@@ -33,4 +34,11 @@ app.use(expressMinify({
 const Routes = require('./routes')
 Routes.initialize(app)
 
-module.exports = app
+app.use('*', function (req, res) {
+  if (req.isSpider()) {
+    return res.status('302').redirect('https://www.google.com/')
+  }
+  return res.redirect(`${req.protocol}://${req.headers.host}/`)
+})
+
+app.listen(port, () => console.info(`Web server listening on port ${port}`))
